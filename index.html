@@ -4,12 +4,147 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="Bolt-Free Bootstrap 3 Theme">
+    <meta name="discription" content="This is my portfolio site.">
+    <meta name="keywords" content="Bolt, Bootstrap, portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/lib/all.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
+    <!--ヘッダー-->
+    <header class="header">
+      <a class="link" href="#">
+        <i class="fas fa-bolt bolt_icon"></i>
+      </a>
+      <button class="contact_button" type="button" name="button" onclick="location.href='#'">Contact</button>
+    </header>
+    <!--メインコンテンツ-->
+    <main>
+    <!--タイトル部分-->
+      <div class="firstview">
+        <div class="title">
+          <h1 class="title__heading">Bolt Theme</h1>
+          <p class="title__sub">FREE BOOTSTRAP THEMES</p>
+        </div>
+      </div>
+    <!--サイト紹介部分-->
+      <div class="pre">
+        <figure class="pre__content pre__image">
+          <img class="pre__image__iphone" src="./img/iphone.png" alt="iPhone">
+        </figure>
+        <div class="pre__content preface">
+          <h2 class="preface__heading">WHAT WE CAN DO?</h2>
+          <p class="preface__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+    <!--記事のコンテンツ-->
+      <article>
+        <div class="latest_content">
+          <h2 class="latest_content__heading">OUR LATEST WORK</h2>
+          <div class="articles">
+            <div class="articles__content smartphone">
+              <a class="link" href="#">
+                <figure class="articles__figure">
+                  <img class="articles__image" src="./img/01.jpg" alt="スマホ">
+                </figure>
+              </a>
+            </div>
+            <div class="articles__content robot">
+              <a class="link" href="#">
+                <figure class="articles__figure">
+                  <img class="articles__image" src="./img/02.jpg" alt="ロボット">
+                </figure>
+              </a>
+            </div>
+            <div class="articles__content infnity">
+              <a class="link" href="#">
+                <figure class="articles__figure">
+                  <img class="articles__image" src="./img/03.jpg" alt="雌雄無限">
+                </figure>
+              </a>
+            </div>
+            <div class="articles__content tiles">
+              <a class="link" href="#">
+                <figure class="articles__figure">
+                  <img class="articles__image" src="./img/04.jpg" alt="タイル">
+                </figure>
+              </a>
+            </div>
+            <div class="articles__content goku">
+              <a class="link" href="#">
+                <figure class="articles__figure">
+                  <img class="articles__image" src="./img/05.jpg" alt="悟空">
+                </figure>
+              </a>
+            </div>
+            <div class="articles__content c-3po">
+              <a class="link" href="#">
+                <figure class="articles__figure">
+                  <img class="articles__image" src="./img/06.jpg" alt="c3po">
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="email_me clearfix">
+            <p class="email_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+            <button class="email_button" type="button" name="button" onclick="location.href='#'">Email Me!</button>
+          </div>
+        </div>
+      </article>
+      <!--スキル紹介-->
+      <article>
+        <div class="skills">
+          <h2 class="skills__heading">OUR SKILLS</h2>
+          <div class="skills__wrapper clearfix">
+            <figure class="skills__content skills__js">
+              <img class="skill_meter" src="./img/circle_01.png" alt="JSメーター">
+              <figcaption class="skill_name">JavaScript</figcaption>
+            </figure>
+            <figure class="skills__content skills__bootstrap">
+              <img class="skill_meter" src="./img/circle_02.png" alt="Bootstrapメーター">
+              <figcaption class="skill_name">Bootstorap</figcaption>
+            </figure>
+            <figure class="skills__content skills__WP">
+              <img class="skill_meter" src="./img/circle_03.png" alt="WPメーター">
+              <figcaption class="skill_name">WordPress</figcaption>
+            </figure>
+            <figure class="skills__content skills__photoshop">
+              <img class="skill_meter" src="./img/circle_04.png" alt="photoshopメーター">
+              <figcaption class="skill_name">Photoshop</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+    </main>
+    <!--SNSコンテンツ-->
+    <div class="sns clearfix">
+      <a class="link" href="#">
+        <div class="sns__icon facebook">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+      </a>
+      <a class="link" href="#">
+        <div class="sns__icon instagram">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+      <a class="link" href="#">
+        <div class="sns__icon twitter">
+          <i class="fab fa-twitter"></i>
+        </div>
+      </a>
+      <a class="link" href="#">
+        <div class="sns__icon mail">
+          <i class="fas fa-envelope"></i>
+        </div>
+      </a>
+    </div>
+    <!--フッター-->
+    <footer class="footer clearfix">
+      <p class="footer__text">Crafted with &hearts; By BlackTie.co.</p>
+    </footer>
   </body>
 </html>
