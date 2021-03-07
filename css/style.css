@@ -1,7 +1,13 @@
 @charset "utf-8";
 
+/*全体のデザイン*/
 body {
   background-color: #f2f2f2;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
 }
 
 .clearfix::after {
@@ -25,8 +31,15 @@ body {
   font-size: 12px;
   font-family: 'Lato', sans-serif;
   color: #fff;
+  transition: 0.3s;
 }
 
+.button:hover {
+  color: #333;
+}
+
+
+/*ヘッダーのデザイン*/
 .header {
   background-color: #fff;
   position: fixed;
@@ -37,27 +50,28 @@ body {
 
 .bolt_icon {
   font-size: 50px;
-  color: #000;
+  color: #333;
   padding: 15px;
-  margin-left: 20%;
 }
 
 .contact_button {
   float: right;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right: 20%;
   padding: 14px 12px;
 }
 
-.firstview {
+
+
+/*タイトル部分のデザイン*/
+.title {
   background-color: #f2f2f2;
   padding: 250px 0;
   margin-top: 80px;
   text-align: center;
 }
 
-.title {
+.title__inner {
   display: inline-block;
 }
 
@@ -75,26 +89,27 @@ body {
   margin-top: 25px;
 }
 
+
+
+/*序文のデザイン*/
 .pre {
   background-color: #74cfae;
   padding-top: 50px;
-  position: relative;
 }
 
 .pre__image_block {
-  margin-left: 20%;
+  float: left;
+  width: 208px;
+  margin-left: 10%;
 }
 
 .preface {
-  position: absolute;
-  top: 50%;
-  left: 45%;
-  right: 15%;
-  transform: translateY(-50%);
+  float: right;
+  width: 650px;
+  padding-top: 20px;
   text-align: center;
   color: #fff;
 }
-
 
 .preface__heading {
   font-family: 'Raleway', sans-serif;
@@ -108,14 +123,12 @@ body {
   margin-top: 35px;
 }
 
+
+
+/*記事部分のデザイン*/
 .latest_content {
   padding-top: 60px;
   padding-bottom: 70px;
-}
-
-.articles {
-  width: 1100px;
-  margin: 0 auto;
 }
 
 .latest_content__heading {
@@ -142,13 +155,22 @@ body {
   margin-left: 0;
 }
 
+.article__image {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.article__image:hover {
+  opacity: 1;
+}
+
 .email_me {
   width: 850px;
   padding-top: 90px;
   margin: 0 auto;
 }
 
-.email_text {
+.email_me__text {
   text-align: center;
   font-size: 20px;
   line-height: 30px;
@@ -158,17 +180,21 @@ body {
   width: 620px;
 }
 
-.email_button {
+.email_me__button {
   float: left;
+  display: inline-block;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 90px;
   padding: 14px 20px;
 }
 
+
+
+/*スキル紹介のデザイン*/
 .skills {
   background-color: #4e4e4e;
-  padding-top: 60px;
+  padding-top: 70px;
   padding-bottom: 100px;
 }
 
@@ -204,12 +230,17 @@ body {
   padding-top: 20px;
 }
 
+
+
+/*SNSコンテンツのデザイン*/
 .sns {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.sns__inner {
+  width: 740px;
+  margin: 0 auto;
 }
 
 .sns__icon {
@@ -219,12 +250,16 @@ body {
   float: left;
   width: 185px;
   padding: 20px 0;
+  transition: 0.3s;
 }
 
 .sns__icon:hover {
   background-color: #fff;
 }
 
+
+
+/*フッターのデザイン*/
 .footer {
   background-color: #74cfae;
   padding-top: 20px;
@@ -236,5 +271,4 @@ body {
   font-size: 15px;
   color: #fff;
   float: right;
-  padding-right: 20%;
 }
