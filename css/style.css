@@ -379,30 +379,21 @@ main {
     width: 90%;
   }
 
-  .email_me {
-    width: 100%;
-  }
-
-  .email_me__text {
-    float: none;
-    width: 100%;
-  }
-
-  .email_me__button {
-    float: none;
-  }
-
   .sns {
     padding: 50px 15px;
   }
 
   .sns__inner {
+    margin: 0;
+    width: 100%;
+  }
+
+  .sns__gloup {
     width: 100%;
   }
 
   .sns__icon {
     float: none;
-    display: block;
     width: 100%;
   }
 }
