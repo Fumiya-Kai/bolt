@@ -286,11 +286,11 @@ main {
     margin: 0 auto;
   }
 
-  .articles__content:nth-child(1), .articles__content:nth-child(4) {
+  .articles__content:nth-child(3n+1) {
     margin-left: auto;
   }
 
-  .articles__content:nth-child(4) {
+  .articles__content:nth-child(3n+4) {
     margin-top: 80px;
   }
 
