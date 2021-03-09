@@ -28,6 +28,10 @@ main {
   clear: both;
 }
 
+.heading {
+  font-size: 24px;
+}
+
 .image {
   vertical-align: bottom;
 }
@@ -113,10 +117,6 @@ main {
   color: #fff;
 }
 
-.preface__heading {
-  font-size: 24px;
-}
-
 .preface__text {
   font-size: 20px;
   line-height: 25px;
@@ -132,7 +132,6 @@ main {
 }
 
 .latest_content__heading {
-  font-size: 24px;
   color: #333;
 }
 
@@ -191,7 +190,6 @@ main {
 
 .skills__heading {
   text-align: center;
-  font-size: 24px;
   color: #fff;
 }
 
