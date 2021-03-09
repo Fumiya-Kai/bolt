@@ -5,6 +5,14 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+main {
+  padding-top: 70px;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
 .wrapper {
   background-color: #f2f2f2;
 }
@@ -26,14 +34,10 @@ body {
 
 .link {
   text-decoration: none;
-}
-
-.icon__link {
   display: inline-block;
 }
 
 .button {
-  display: block;
   background-color: #74cfae;
   border: none;
   font-size: 12px;
@@ -51,9 +55,11 @@ body {
   background-color: #fff;
   position: fixed;
   top: 0;
+  left: 0;
+  box-sizing: border-box;
   width: 100%;
   padding: 15px;
-  z-index: 10;
+  z-index: 100;
 }
 
 .bolt_icon {
@@ -67,9 +73,6 @@ body {
 }
 
 
-main {
-  padding-top: 70px;
-}
 
 /*タイトル部分のデザイン*/
 .title {
@@ -84,7 +87,6 @@ main {
 }
 
 .title__sub {
-  font-family: 'Raleway', sans-serif;
   font-size: 30px;
   color: #c0c0c0;
   margin-top: 25px;
@@ -100,7 +102,6 @@ main {
 
 .pre__image_block {
   float: left;
-  width: 208px;
   margin-left: 10%;
 }
 
@@ -113,7 +114,6 @@ main {
 }
 
 .preface__heading {
-  font-family: 'Raleway', sans-serif;
   font-size: 24px;
 }
 
@@ -127,23 +127,22 @@ main {
 
 /*記事部分のデザイン*/
 .latest_content {
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding: 60px 0 70px 0;
+  text-align: center;
 }
 
 .latest_content__heading {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
   font-size: 24px;
   color: #333;
-  margin-bottom: 40px;
+}
+
+.latest_content__articles {
+  margin-top: 40px;
 }
 
 .articles__content {
   float: left;
-  width: 300px;
-  margin-top: 80px;
-  margin-left: 100px;
+  margin: 80px 0 0 100px;
 }
 
 .articles__content:nth-child(-n+3) {
@@ -164,24 +163,20 @@ main {
 }
 
 .email_me {
-  width: 850px;
-  margin: 0 auto;
+  display: inline-block;
   margin-top: 90px;
 }
 
 .email_me__text {
-  text-align: center;
   font-size: 20px;
   line-height: 30px;
-  font-family: 'Raleway', sans-serif;
   color: #333;
   float: left;
-  width: 620px;
+  width: 580px;
 }
 
 .email_me__button {
   float: left;
-  display: inline-block;
   margin-left: 90px;
   padding: 14px 20px;
 }
@@ -191,23 +186,20 @@ main {
 /*スキル紹介のデザイン*/
 .skills {
   background-color: #4e4e4e;
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding: 70px 0 100px 0;
 }
 
 .skills__heading {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
   font-size: 24px;
-  line-height: 24px;
   color: #fff;
-  margin-bottom: 40px;
 }
 
 .skills__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 
 .skills__content {
@@ -236,8 +228,6 @@ main {
 
 .sns__icon {
   display:inline-block;
-  font-size: 40px;
-  color: #74cfae;
   width: 185px;
   padding: 20px 0;
   transition: 0.3s;
@@ -247,17 +237,175 @@ main {
   background-color: #fff;
 }
 
+.sns__link {
+  font-size: 40px;
+  color: #74cfae;
+}
+
 
 
 /*フッターのデザイン*/
 .footer {
   background-color: #74cfae;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 20px 0 25px 0;
   text-align: right;
 }
 
 .footer__text {
   font-size: 15px;
   color: #fff;
+}
+
+
+
+@media screen and (max-width: 1199px) {
+  .inner {
+    width: 97%;
+  }
+
+  .pre {
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  .pre__content {
+    float: none;
+  }
+
+  .pre__image_block {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .preface {
+    margin: 0 auto;
+  }
+
+  .articles__content {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .articles__content:nth-child(1), .articles__content:nth-child(4) {
+    margin-left: auto;
+  }
+
+  .articles__content:nth-child(4) {
+    margin-top: 80px;
+  }
+
+  .email_me {
+    width: 100%;
+  }
+
+  .email_me__text {
+    float: none;
+    width: 100%;
+  }
+
+  .email_me__button {
+    float: none;
+    margin: 40px 0 0 0;
+  }
+
+  .skills__wrapper {
+    display: block;
+  }
+
+  .skills__content {
+    float: none;
+    width: 100%;
+    margin: 88px 0 0 0;
+    text-align: center;
+  }
+
+  .skills__content:first-child {
+    margin-top: 0;
+  }
+
+  .sns__gloup {
+    display: inline-block;
+  }
+
+  .sns__icon {
+    float: left;
+  }
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .contact_button {
+    display: none;
+  }
+
+  .humberger {
+    float: right;
+    box-sizing: border-box;
+    width: 45px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 1px 0;
+  }
+
+  .line,
+  .line-wrapper::before,
+  .line-wrapper::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ddd;
+    margin-top: 5px;
+  }
+
+  .line-wrapper::before {
+    margin-top: 0;
+  }
+
+  .line::after {
+    bottom: 0;
+  }
+
+  .title {
+    padding: 160px 0 130px 0;
+  }
+
+  .title__heading {
+    font-size: 80px;
+  }
+
+  .preface {
+    width: 90%;
+  }
+
+  .email_me {
+    width: 100%;
+  }
+
+  .email_me__text {
+    float: none;
+    width: 100%;
+  }
+
+  .email_me__button {
+    float: none;
+  }
+
+  .sns {
+    padding: 50px 15px;
+  }
+
+  .sns__inner {
+    width: 100%;
+  }
+
+  .sns__icon {
+    float: none;
+    display: block;
+    width: 100%;
+  }
 }
