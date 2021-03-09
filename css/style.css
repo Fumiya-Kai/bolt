@@ -283,11 +283,8 @@ main {
 
   .articles__content {
     float: none;
-    margin: 0 auto;
-  }
-
-  .articles__content:nth-child(3n+1) {
-    margin-left: auto;
+    text-align: center;
+    margin: 0;
   }
 
   .articles__content:nth-child(3n+4) {
