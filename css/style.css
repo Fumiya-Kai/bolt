@@ -76,6 +76,9 @@ main {
   padding: 14px 12px;
 }
 
+.humberger {
+  display: none;
+}
 
 
 /*タイトル部分のデザイン*/
@@ -336,6 +339,7 @@ main {
   }
 
   .humberger {
+    display: block;
     float: right;
     box-sizing: border-box;
     width: 45px;
